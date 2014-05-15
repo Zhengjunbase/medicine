@@ -24,27 +24,43 @@ div.right-sidebar{
     background: #efeee4;
     min-height: 400;
 }
-#myTags{
-    background: #ffffff;
+/*#zhengzhuang{*/
+    /*background: #ffffff;*/
     /*-webkit-box-shadow: 0 8px 6px -6px rgba(0,0,0,0.2);*/
-    width: 500px;
+    /*width: 500px;*/
     /*display: inline-block;*/
     /*position: absolute;*/
-    float: left;
+    /*float: left;*/
     /*left: 200px;*/
 
-}
+/*}*/
 div .tags{
     background: #ffffff;
-    /*-webkit-box-shadow: 0 8px 6px -6px rgba(0,0,0,0.2);*/
+    -webkit-box-shadow: 0 8px 6px -6px rgba(0,0,0,0.2);
     width: 460px;
+    color: blue;
+    border-color: blue;
     /*display: inline-block;*/
     /*position: absolute;*/
     float: left;
     /*left: 200px;*/
 
-}
 
+}
+div .tags li.tagit-choice-editable{
+    width: auto;
+    -webkit-border-radius: 15.5px;
+    color:#39B2E2;
+    border: solid 1px #39B2E2;
+    background: #ffffff;
+    font-family: sans-serif ;
+    font-weight: normal;
+}
+.tags{
+    /*display: inline-block;*/
+    /*float: inherit;*/
+    height: auto;
+}
 div.form-group{
     float: left;
 }
@@ -59,9 +75,7 @@ div .mname{
 div .pa{
     float: left;
 }
-div.medicine{
-    /*padding-bottom: 30px;*/
-}
+
 ul {
     padding-left: 0px;
 }
@@ -88,20 +102,7 @@ div.gleft{
 #submit{
     /*float:;*/
 }
-#myTags li.tagit-choice-editable{
-    width: auto;
-    -webkit-border-radius: 15.5px;
-    color:#39B2E2;
-    border: solid 1px #39B2E2;
-    background: #ffffff;
-    font-family: sans-serif ;
-    font-weight: normal;
-}
-.tags{
-    /*display: inline-block;*/
-    /*float: inherit;*/
-    height: auto;
-}
+
 /*.form-control .weight{*/
 /*width: 10px;*/
 /*color: #ff0000;*/

@@ -2,7 +2,7 @@
  * Created by zhengjun on 5/6/14.
  */
 $(document).ready(function() {
-    $("#myTags").tagit();
+    $('#zhengzhuang').tagit();
     $("#biaoqian").tagit();
 
     initApend();

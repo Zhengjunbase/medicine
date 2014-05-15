@@ -13,13 +13,14 @@
     <script src="/js/jquery-ui-1.9.2.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="/js/tag-it.js" type="text/javascript" charset="utf-8"></script>
     <script src="/js/bootstrap.js"></script>
-    <script src="/js/bootstrap-switch.js"></script>
+    <%--<script src="/js/bootstrap-switch.js"></script>--%>
     <script src="/js/load.js"></script>
     <link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap-theme.min.css">
 
     <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/bootstrap-switch.css" rel="stylesheet">
-    <%--<link rel="stylesheet" type="text/css" href="css/jquery-ui-1.10.4.min.css">--%>
+    <%--<link href="/css/bootstrap-switch.css" rel="stylesheet">--%>
+    <link rel="stylesheet" type="text/css" href="/css/jquery-ui-1.10.4.min.css">
+    <%--<link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/flick/jquery-ui.css">--%>
     <link href="/css/jquery.tagit.css" rel="stylesheet" type="text/css">
     <link href="/css/load.css" rel="stylesheet" type="text/css">
     <link href="/css/button.css" rel="stylesheet" type="text/css">
@@ -52,11 +53,12 @@
 
         <div>  <br/></div>
         <div>症状<br/></div>
-        <div><ul id="myTags" class = "tags">
+        <div><ul id="zhengzhuang" class = "tags">
             <!-- Existing list items will be pre-added to the tags -->
-            <%--<li>Tag1</li> <li>Tag2</li>--%>
+            <li>Tag1</li> <li>Tag2</li>
         </ul>
         </div>
+
         <ul class="mform" style="list-style-type:none">
             <li class="mlist">
                 <div class="2medicine">
@@ -87,8 +89,7 @@
         <%--<button type="submit" class="btn btn-default">Sign in</button>--%>
 
     </form>
-    <div>
-        <ul id="biaoqian" class = "tags">
+    <div><ul id="biaoqian" class = "tags">
         <!-- Existing list items will be pre-added to the tags -->
         <li>Tag1</li> <li>Tag2</li>
     </ul>
@@ -97,7 +98,7 @@
     </div>
     </div>
 
-    <p class="pa"> hellod</p>
+    <p class="pa"> hellodd</p>
 
 </div>
 <div class = right-sidebar>
