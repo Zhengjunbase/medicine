@@ -1,0 +1,109 @@
+div{
+    display: block;
+}
+
+div.left-sidebar{
+    width: 200px;
+    margin-left: 15px ;
+    background: #efeee4;
+    min-height: 400;
+    float: left;
+}
+div.content{
+    float: left;
+    width: 500px;
+    margin-left: 5px;
+    padding: 5px ;
+    background: #ffffff;
+    min-height: 400;
+}
+div.right-sidebar{
+    float: left;
+    width: 300px;
+    margin-left: 5px;
+    background: #efeee4;
+    min-height: 400;
+}
+#myTags{
+    background: #ffffff;
+    /*-webkit-box-shadow: 0 8px 6px -6px rgba(0,0,0,0.2);*/
+    width: 500px;
+    /*display: inline-block;*/
+    /*position: absolute;*/
+    float: left;
+    /*left: 200px;*/
+
+}
+div .tags{
+    background: #ffffff;
+    /*-webkit-box-shadow: 0 8px 6px -6px rgba(0,0,0,0.2);*/
+    width: 460px;
+    /*display: inline-block;*/
+    /*position: absolute;*/
+    float: left;
+    /*left: 200px;*/
+
+}
+
+div.form-group{
+    float: left;
+}
+div .mname{
+    min-width: 20px;
+    width:120px;
+    padding-right: 2px;
+    /*padding-left: 0px;*/
+    padding-bottom: 10px;
+
+}
+div .pa{
+    float: left;
+}
+div.medicine{
+    /*padding-bottom: 30px;*/
+}
+ul {
+    padding-left: 0px;
+}
+
+div .mname .medicine .gright {
+    padding-bottom: 10px;
+
+}
+div.gright{
+    min-width: 20px;
+    width: 80px;
+    float: left;
+    color: #ccc;
+    /*padding-right: 40px;*/
+
+}
+div.gleft{
+    width: 140px;
+    padding-right: 60px;
+    float: left;
+    color: #ccc;
+
+}
+#submit{
+    /*float:;*/
+}
+#myTags li.tagit-choice-editable{
+    width: auto;
+    -webkit-border-radius: 15.5px;
+    color:#39B2E2;
+    border: solid 1px #39B2E2;
+    background: #ffffff;
+    font-family: sans-serif ;
+    font-weight: normal;
+}
+.tags{
+    /*display: inline-block;*/
+    /*float: inherit;*/
+    height: auto;
+}
+/*.form-control .weight{*/
+/*width: 10px;*/
+/*color: #ff0000;*/
+/*}*/
+
