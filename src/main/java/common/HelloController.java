@@ -18,7 +18,7 @@ public class HelloController {
 //        model.addAttribute("name", name);
         System.out.println("fuck you");
         String ret = "hello,yes";
-        return "b";
+        return "c";
     }
 
 

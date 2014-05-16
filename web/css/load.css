@@ -36,10 +36,10 @@ div.right-sidebar{
 /*}*/
 div .tags{
     background: #ffffff;
-    -webkit-box-shadow: 0 8px 6px -6px rgba(0,0,0,0.2);
+    /*-webkit-box-shadow: 0 8px 6px -6px rgba(0,0,0,0.2);*/
     width: 460px;
-    color: blue;
-    border-color: blue;
+    /*color: blue;*/
+    /*border-color: blue;*/
     /*display: inline-block;*/
     /*position: absolute;*/
     float: left;
@@ -49,7 +49,7 @@ div .tags{
 }
 div .tags li.tagit-choice-editable{
     width: auto;
-    -webkit-border-radius: 15.5px;
+    -webkit-border-radius: 13.5px;
     color:#39B2E2;
     border: solid 1px #39B2E2;
     background: #ffffff;
@@ -67,7 +67,7 @@ div.form-group{
 div .mname{
     min-width: 20px;
     width:120px;
-    padding-right: 2px;
+    /*padding-right: 2px;*/
     /*padding-left: 0px;*/
     padding-bottom: 10px;
 

@@ -91,7 +91,7 @@
     </form>
     <div><ul id="biaoqian" class = "tags">
         <!-- Existing list items will be pre-added to the tags -->
-        <li>Tag1</li> <li>Tag2</li>
+        <%--<li>Tag1</li> <li>Tag2</li>--%>
     </ul>
     <div id="submit">
         <a href="#" class="button glow button-rounded button-flat-action">press me</a>
