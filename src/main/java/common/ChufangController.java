@@ -1,12 +1,13 @@
 package common;
 
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+import org.springframework.http.HttpEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
-
-import javax.validation.Valid;
 
 /**
  * Created by zhengjun on 5/16/14.
@@ -19,11 +20,30 @@ import javax.validation.Valid;
 public class ChufangController {
 
 
-    @RequestMapping(method = RequestMethod.POST,value = "/post",headers="Accept=application/xml, application/json")
-    public  @ResponseBody String receive(@Valid @RequestBody FormData formData)
+    @RequestMapping(method = RequestMethod.POST,value = "/post")
+    public  @ResponseBody String receive( HttpEntity<String> entity)
     {
         System.out.println("requestin");
-        System.out.println(formData.toString());
+        System.out.println(entity.getBody());
+//
+        JSONArray array =  null;
+//        JsonObject jobj = (JsonObject)paser.parse(entity.getBody());
+
+        JSONObject jobj = new JSONObject("{\"name\":\"Gerry\",\"age\":\"20\",\"city\":\"Sydney\"}");
+        JSONObject j =  new JSONObject(entity.getBody());
+//        ObjectMapper mapper = new ObjectMapper();
+//        try {
+//            FormData data = mapper.readValue(entity.getBody(),FormData.class);
+//            System.out.println(data.getAge());
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+
+//        JSONPObject jobj =
+        System.out.println("test");
+        System.out.println(j);
+//        System.out.println("test");
+
         return "good";
     }
 //    public  String  receiveChufang( @Valid @RequestBody  FormData formData){

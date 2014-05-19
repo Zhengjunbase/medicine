@@ -3,6 +3,11 @@
     <output-path>$PROJECT_DIR$/target</output-path>
     <root id="archive" name="spring-mvc-showcase.war">
       <element id="artifact" artifact-name="testmaven2:war exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="json-20140107" />
+        </element>
+      </element>
     </root>
   </artifact>
 </component>

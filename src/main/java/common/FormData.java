@@ -7,6 +7,9 @@ public class FormData {
         public String name;
         public int age;
         public String city;
+    public FormData(){
+
+    }
 
     public String getName() {
         return name;
