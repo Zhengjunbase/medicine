@@ -7,46 +7,72 @@ $(document).ready(function() {
     initApend();
     console.log("hello");
     $("#submit").click(function(){
-            console.log("submit");
-            var chufang={};
-            getBasicInfo(chufang);
-            getSymptomLists(chufang);
-            getMedicineLists(chufang);
-            getCustomTagLists(chufang);
+        console.log("submit");
+        var chufang={};
+        getBasicInfo(chufang);
+        getSymptomLists(chufang);
+        getMedicineLists(chufang);
+        getCustomTagLists(chufang);
 
+        var formData =				{ "name": "Gerry", "age": "20", "city": "Sydney" };
 
-            jQuery.ajax({
-                type:"post",
-                data:chufang,
-                url:"addComment!comment.action",
-                dataType:"json",
-                success: function aa() {
-                    alert("处方成功提交");
-//                    alert(data[0].userName);/
-                }
-            });
-        console.log(chufang.basicInfo.toString());
-            console.log(JSON.stringify(chufang));
+//                	"{ "name": \"Gerry\", \"age\": \"20\", \"city\": \"Sydney\" }";
+        console.log("start post"+formData);
+
+//        $.postJSON("FormData", formData, function() {
+////            $("#assignedId").val(data.id);
+////            showPopup();
+//        });
+        jQuery.ajax({
+//            headers: {
+            'Accept': 'application/json',
+//            'Content-Type': "text/json; charset=utf-8",
+//            },
+            'type':"post",
+            'url': 'http://192.168.1.103:8080/testmaven2/chufang/post',
+            'data':JSON.stringify(formData),
+            'dataType': 'json',
+//            dataType: "text"
+            'contentType': "application/json; charset=utf-8"
+
+//            'success': callback
         });
-
+//            $.ajax({
+//                type:"post",
+//                data: JSON.stringify(formData),
+//                url:"http://192.168.1.109:8080/testmaven2/chufang",
+//                contentType: "application/json",
+//                dataType:"json",
+//                success: function aa() {
+//                    alert("处方成功提交");
+////                    alert(data[0].userName);
+//                },
+//                error: function() {
+//                    alert('fail');
+//                }
+//            });
+        console.log(chufang.basicInfo.toString());
+        console.log(JSON.stringify(chufang));
     });
+
+});
 function initApend()
+{
+    var m = $(".mform").html();
+    for( i = 0; i<2 ;i++)
     {
-        var m = $(".mform").html();
-        for( i = 0; i<2 ;i++)
-        {
         $(".mform").append(m);
-        }
+    }
 
-        var m1 = $(".medicineform").html();
-        for( i = 0; i<2 ;i++)
-        {
-            $(".medicineform").append(m1);
-        }
+    var m1 = $(".medicineform").html();
+    for( i = 0; i<2 ;i++)
+    {
+        $(".medicineform").append(m1);
+    }
 
-        console.log("hello1");
+    console.log("hello1");
 
-    };
+};
 
 
 function getBasicInfo(chufang){
