@@ -21,6 +21,7 @@ public class Main {
 //        news.setName("hellosdf");
 //        sess.save(news);
 //        news.setId(342);
+        Object o;
         Medicine m = new Medicine();
         m.setName("dahuang");
         m.setInPrice(new Float(2.0));

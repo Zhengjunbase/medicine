@@ -29,7 +29,7 @@ $(document).ready(function() {
 //            'Content-Type': "text/json; charset=utf-8",
 //            },
             'type':"post",
-            'url': 'http://192.168.1.103:8080/testmaven2/chufang/post',
+            'url': 'http://localhost:8080/testmaven2/chufang/post',
             'data':JSON.stringify(formData),
             'dataType': 'json',
 //            dataType: "text"

@@ -55,4 +55,7 @@ public class Doctor {
     public void setCount(Integer count) {
         this.count = count;
     }
+    public void tset(){
+
+    }
 }

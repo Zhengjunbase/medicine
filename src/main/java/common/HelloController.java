@@ -16,7 +16,7 @@ public class HelloController {
 //@ResponseBody
     public String helloworld() {
 //        model.addAttribute("name", name);
-        System.out.println("fuck you");
+        System.out.println("Hello Controller");
         String ret = "hello,yes";
         return "c";
     }

@@ -23,7 +23,7 @@ public class ChufangController {
     @RequestMapping(method = RequestMethod.POST,value = "/post")
     public  @ResponseBody String receive( HttpEntity<String> entity)
     {
-        System.out.println("requestin");
+        System.out.println("ChufangController");
         System.out.println(entity.getBody());
 //
         JSONArray array =  null;

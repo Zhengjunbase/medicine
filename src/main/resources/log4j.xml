@@ -11,29 +11,29 @@
 		</layout>
 	</appender>
 
-	<logger name="org.springframework.samples">
-		<level value="{level}" />
-	</logger>
+	<!--<logger name="org.springframework.samples">-->
+		<!--<level value="{level}" />-->
+	<!--</logger>-->
 
-	<logger name="org.springframework.core">
-		<level value="{level}"  />
-	</logger>
+	<!--<logger name="org.springframework.core">-->
+		<!--<level value="{level}"  />-->
+	<!--</logger>-->
 
-	<logger name="org.springframework.beans">
-		<level value="{level}"  />
-	</logger>
+	<!--<logger name="org.springframework.beans">-->
+		<!--<level value="{level}"  />-->
+	<!--</logger>-->
 
-	<logger name="org.springframework.context">
-		<level value="{level}"/>
-	</logger>
+	<!--<logger name="org.springframework.context">-->
+		<!--<level value="{level}"/>-->
+	<!--</logger>-->
 
-	<logger name="org.springframework.http">
-		<level value="{level}" />
-	</logger>
+	<!--<logger name="org.springframework.http">-->
+		<!--<level value="{level}" />-->
+	<!--</logger>-->
 
-	<logger name="org.springframework.web">
-		<level value="{level}" />
-	</logger>
+	<!--<logger name="org.springframework.web">-->
+		<!--<level value="{level}" />-->
+	<!--</logger>-->
 
 
 	<root>
