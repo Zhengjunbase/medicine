@@ -1,21 +1,37 @@
 /**
  * Created by zhengjun on 6/1/14.
  */
+import common.HelloController;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.web.servlet.MockMvc;
+
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+import static org.springframework.test.web.servlet.setup.MockMvcBuilders.standaloneSetup;
 
 //import static org.hamcrest.Matchers.startsWith;
 //import org.springframework.samples.mvc.AbstractContextControllerTests;
 //@RunWith(SpringJUnit4ClassRunner.class)
-public class HelloControllerTest {
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(locations = "classpath:applicationContext.xml")
+public class HelloControllerTest extends AbstractContextControllerTest {
+//    private MockMvc mockMvc;
     private MockMvc mockMvc;
+    @Before
+    public void setup() throws Exception {
+        this.mockMvc = standaloneSetup(new HelloController()).build();
+    }
 
     @Test
     public void prescriptionPage() throws Exception{
         Assert.assertTrue("value" == "value");
 
-//        mockMvc.perform(get("http://localhost:8080/testmaven2/hello#")).andExpect(status().isOk());
+        mockMvc.perform(get("192.168.1.1")).andExpect(status().isOk());
     }
 //    'Accept': 'application/json',
 ////            'Content-Type': "text/json; charset=utf-8",

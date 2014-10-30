@@ -14,6 +14,7 @@ $(document).ready(function() {
         getMedicineLists(chufang);
         getCustomTagLists(chufang);
 
+
         var formData =				{ "name": "Gerry", "age": "20", "city": "Sydney" };
 
 //                	"{ "name": \"Gerry\", \"age\": \"20\", \"city\": \"Sydney\" }";
